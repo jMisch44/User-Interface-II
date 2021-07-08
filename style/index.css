@@ -60,6 +60,7 @@ html{
     font-family: 'Exo 2', sans-serif;
     font-size: 2rem;
     width: 100%;
+    font-family: 'Exo 2', sans-serif;
 }
 
 /* header styling */
@@ -86,10 +87,20 @@ nav a{
     align-items: center;
     border:.1rem solid black;
     text-decoration: none;
+    transition: .3s;
+}
+nav a:hover{
+    background-color: black;
+    color: white;
 }
 .home-link{
     color: white;
     background-color: black;
+    transition: .3s;
+}
+.home-link:hover{
+    background-color:white;
+    color: black;
 }
 
 /* big image and text on it styling */
@@ -115,6 +126,12 @@ h1{
     box-sizing: border-box;
     padding:1rem 2.5rem;
     font-size: 2rem;
+    background-color: blanchedalmond;
+    transition: .3s;
+}
+.projects-button:hover{
+    background-color: black;
+    color: blanchedalmond;
 }
 /* projects styling */
 
@@ -153,6 +170,11 @@ h1{
 .title-link{
     text-decoration: none;
     color: black;
+    transition: .3s;
+}
+.title-link:hover{
+    color: gray;
+    text-shadow: .1rem .1rem black;
 }
 /* footer styling */
 footer{
@@ -163,7 +185,12 @@ footer{
     background-color: blanchedalmond;
 }
 footer button{
-
+    background-color: linen;
     padding: 0.5rem 2.5rem;
     font-size: 2rem;
+    transition: .3s;
+}
+footer button:hover{
+    color: blanchedalmond;
+    background-color: black;
 }
