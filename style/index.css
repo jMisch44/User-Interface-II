@@ -194,3 +194,8 @@ footer button:hover{
     color: blanchedalmond;
     background-color: black;
 }
+/* about page styling */
+.about-info{
+    display: flex;
+    justify-content: center;
+}
