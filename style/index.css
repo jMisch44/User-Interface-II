@@ -51,16 +51,21 @@ table {
 
 /* Full Body styling */
 html{
-    font-size: 10px;
+    font-size: 62.5%;
 }
-/* body{
+body{
     border: 1px solid black;
-} */
+}
+*{
+    box-sizing: border-box;
+}
 .main-container{
     font-family: 'Exo 2', sans-serif;
     font-size: 2rem;
     width: 100%;
     font-family: 'Exo 2', sans-serif;
+    display: flex;
+    flex-flow: column wrap;
 }
 
 /* header styling */
@@ -69,6 +74,7 @@ header{
     display:flex;
     justify-content: space-between;
     align-items: center;
+    width: 98%;
 }
 h2{
     font-size: 4rem;
@@ -77,12 +83,12 @@ nav{
    width:30%;
     display: flex;
     justify-content: space-evenly;
-    height: 4rem;
+    height: 5vh;
 }
 nav a{
     color: black;
     box-sizing: border-box;
-    padding: 0.5rem 2.5rem;
+    padding: 1% 5.4%;
     display:flex;
     align-items: center;
     border:.1rem solid black;
@@ -106,12 +112,13 @@ nav a:hover{
 /* big image and text on it styling */
 .main-section{
     width:75%;
-    height:70vh;
-    margin: 5rem auto;
+    height:80vh;
+    margin: 2% auto;
     border: solid black .5rem;
     background-image:url(https://picsum.photos/seed/picsum/1200/600);
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -123,7 +130,7 @@ h1{
     font-weight: bold;
 }
 .projects-button{
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     padding:1rem 2.5rem;
     font-size: 2rem;
     background-color: blanchedalmond;
@@ -141,7 +148,7 @@ h1{
     justify-content: space-evenly;
     align-content:space-evenly;
     height: 180vh;
-    
+    max-width: 100%;
 
 }
 .images{
@@ -150,13 +157,12 @@ h1{
     align-content: space-evenly;
     background-image: url(https://picsum.photos/seed/picsum/400);
     background-repeat: no-repeat;
-    height: 40rem;
-    width:40rem;
+    background-size: cover;
+    background-position: center;
+    height: 30%;
+    width:30%;
     margin-top: 1rem;
     border: black solid 0.5rem;
-    max-width: 100vh;
-   
-    
 }
 .project-title{
     display: flex;
@@ -164,7 +170,7 @@ h1{
     justify-content: center;
     align-content: flex-end;
     height: 45rem;
-    width: 40rem;
+    max-width: 100%;
     color: black;
 }
 .title-link{
@@ -198,4 +204,51 @@ footer button:hover{
 .about-info{
     display: flex;
     justify-content: center;
+}
+
+/* media queries styling*/
+
+/*tablet*/
+@media(max-width:800px){
+    nav{
+        margin-right: 8%;
+    }
+}
+
+/*phone*/
+@media (max-width:500px) {
+    header{
+        flex-flow: column wrap;
+        justify-content: space-between;
+        align-items: center;
+        height: 37vh;
+        margin: 0%;
+        width: 100%;
+    }
+    nav{
+        margin: 0 auto;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        height: 28vh;
+        width: 30%;
+    }
+    nav a{
+        margin: 0 auto;
+        padding: 1%;
+        width: 100%;
+        height: 7vh;
+        justify-content: center;
+        align-items: center;
+    }
+    .main-section{
+        height: 45vh;
+    }
+    .images{
+        width: 43%;
+        height: 30vh;
+    }
+    .project-title{
+        height: 40vh;
+    }
 }
